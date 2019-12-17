@@ -27,7 +27,7 @@ int main(){
 }' > src/teste.c
 
 if [[ $(ls ../testes/ | md5sum | awk '{print $1}') == "ac0bacadc6861ab22a44af572b255ff1" ]]; then
-	printf "Ambiente de testes realizado com sucesso!\n" "%s"
+	printf "Success!\n" "%s"
 	ls ../testes/ | md5sum | awk '{print $1}'
 	exit 0
 else
